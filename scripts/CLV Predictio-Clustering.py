@@ -9,7 +9,7 @@ df = pd.read_csv(M)
 #creating a new column for log transformation for better distribution 
 df['Log_CLV'] = np.log1p(df['CLV'])
 
-#used neccesary libs to build histogram distribution
+##used neccesary libs to build histogram distribution
 plt.figure(figsize=(16, 6))
 sns.histplot(df['Log_CLV'], bins=30, kde=True)
 plt.title('Distribution of Log(CLV)')
