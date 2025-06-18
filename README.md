@@ -51,7 +51,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
   - Removed duplicates
   - Created CLV features: `TotalSales`, `Frequency`, `AverageOrderValue`, `LifeSpan`, `TotalQuantity`
 - Handled outliers by a statistical method called IQR in Python
-- used log and sqrt numpy methods to transorm data
+- used `log` and `sqrt` Numpy methods to transform data in Python
 
 ---
 
