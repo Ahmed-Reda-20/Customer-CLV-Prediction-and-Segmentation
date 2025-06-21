@@ -87,7 +87,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ## 📊 Visualizations
 
-- Distributions and Boxplots (before and after outlier removal and log transformation)
+- Distributions and Boxplots (before and after outlier removal and log, sqrt transformation)
 - Pie Chart: Customer Count by Segment
 - Pie Chart: Revenue Contribution by Segment
 - Regression Evaluation (Model Coefficients, R²)
