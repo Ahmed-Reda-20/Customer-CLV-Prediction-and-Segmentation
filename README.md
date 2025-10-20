@@ -1,11 +1,11 @@
 
-# 🧠 Customer CLV Prediction & Segmentation
+#  Customer CLV Prediction & Segmentation
 
 A data science project that predicts **Customer Lifetime Value (CLV)** from sales data and segments customers into three groups using clusters. This helps companies know who their most valuable customers are and how marketing can be optimized, It’s vital to remember that CLV is an umbrella term that comprises **acquisition**, **engagement**, **conversion**, and **retention strategies**.
 
 ---
 
-## 📚 Table of Contents
+##  Table of Contents
 
 - [Project Objectives](#-project-objectives)
 - [Tools & Technologies](#-tools--technologies)
@@ -28,7 +28,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 📊 Project Objectives
+##  Project Objectives
 
 - Predict CLV with linear regression model.
 - Segment customers into **High**, **Medium**, and **Low CLV** clusters with K-means clustering.
@@ -36,7 +36,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Languages**: Python, MySQL
 - **Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn
@@ -44,7 +44,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 🧪 Data Source & Preprocessing
+##  Data Source & Preprocessing
 
 - Collected Sales Transaction Data from Kaggle: InvoiceNo, StockCode, Quantity, InvoiceDate, UnitPrice, CustomerID, Country.
 - Cleaned Created features and CLV with SQL:
@@ -55,7 +55,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 📈 Features Used
+##  Features Used
 
 - `TotalSales` = Quantity × UnitPrice
 - `Frequency` = Unique Invoice Count
@@ -66,7 +66,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 🤖 Models Overview
+##  Models Overview
 
 ### 1. **CLV Prediction**
 - Model: Linear Regression
@@ -85,7 +85,7 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 📊 Visualizations
+##  Visualizations
 
 - Distributions and Boxplots (before and after outlier removal and log transformation)
 - Pie Chart: Customer Count by Segment
@@ -95,32 +95,32 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
-### 🧑‍🤝‍🧑 **Customer Distribution**:
+###  **Customer Distribution**:
 
 - The High CLV segment contains the largest number of customers among the three clusters.
 - This suggests a healthy base of high-value customers for potential retention and loyalty strategies.
 
-### 💰 **Revenue Contribution**:
+###  **Revenue Contribution**:
 
 - The High CLV segment generates over ~50% of the total revenue, aligning with its size.
 - The Medium CLV segment contributes a significant, but smaller portion.
 - The Low CLV segment contributes the least to overall revenue, despite representing a noticeable customer count.
 
-### 📈 **CLV Prediction Model**:
+###  **CLV Prediction Model**:
 
 - Regression analysis revealed that Total Sales, Frequency, and Average Order Value were strong predictors of CLV.
 - The model achieved an R² score of ~0.92, indicating a strong fit.
 
-### 🔍 **Behavioral *Patterns**:
+###  **Behavioral *Patterns**:
 
 - After cleaning and transformation:
 - Distributions of CLV-related features normalized.
 - Outlier removal via IQR significantly reduced noise and skew.
 - These improvements positively impacted clustering and model accuracy.
 
-### 📊 **Clustering Insights**:
+###  **Clustering Insights**:
 
 - K-Means segmentation successfully grouped customers by their CLV profiles with silhouette score of ~0.6 which is great for business segmentation and indicates actionable insights
 - Cluster analysis and visualizations (pie charts) clarified the relationship between customer count and revenue share.
@@ -128,9 +128,9 @@ A data science project that predicts **Customer Lifetime Value (CLV)** from sale
 
 ---
 
-## 💡 Business Recommendations:
+##  Business Recommendations:
 
-### ✅ **Prioritize High CLV Customers**:
+###  **Prioritize High CLV Customers**:
 Since the high CLV customers make ~50% of the total revenue and interact constantly
 
 *Recommendations*:
@@ -143,7 +143,7 @@ Since the high CLV customers make ~50% of the total revenue and interact constan
 
 ---
 
-### ✅ **Understand, Grow and Retain Medium CLV Customers**:
+###  **Understand, Grow and Retain Medium CLV Customers**:
 Because Medium CLV make ~50% of total revenue, and have potential for growth and is a valuable segment that interacts regularly and brings decent revenue.
 
 *Recommendations*:
@@ -157,7 +157,7 @@ a stronger relationship
 
 ---
 
-### ✅ **Optimize and Re-Engage Low CLV Customers**:
+###  **Optimize and Re-Engage Low CLV Customers**:
 Low CLV customers contribute ~17.5% of total revenue. While some may remain low value, others might respond to targeted engagement, the focus should be optimizing spending while exploring growth opportunities.
 
 *Recommendations*:
@@ -171,7 +171,7 @@ buyers and limited or one-time deals to renew interest.
     
 ---
 
-### ✅ **Leverage CLV Predictions for Strategic Planning**:
+###  **Leverage CLV Predictions for Strategic Planning**:
 The linear regression model (R² ~0.92) provides accurate CLV forecasts that enable proactive business decisions.
 
 *Recommendations*:
@@ -184,7 +184,7 @@ The linear regression model (R² ~0.92) provides accurate CLV forecasts that ena
 
 4. Sales Team Prioritization: Equip sales teams with CLV predictions to focus efforts on prospects most likely to generate high lifetime value.
 
-### 🎯 General Implementation Framework:
+###  General Implementation Framework:
 Transform these insights into actionable business processes across departments.
 
 *Recommendations*:
